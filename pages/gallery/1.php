@@ -121,9 +121,9 @@ $(document)
 					echo '					
 						<div class="col-lg-3 col-md-4 col-xs-6 thumb">
 							<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
-							   data-image="https://www.stonemarket.in/'.$gallery["images"].'"
+							   data-image="https://www.stonemarket.in/website_creator/'.$gallery["images"].'"
 							   data-target="#image-gallery">
-								<img class="img-thumbnail" src="https://www.stonemarket.in'.$gallery["images"].'"
+								<img class="img-thumbnail" src="https://www.stonemarket.in/website_creator/'.$gallery["images"].'"
 									 alt="Another alt text">
 							</a>
 						</div>						

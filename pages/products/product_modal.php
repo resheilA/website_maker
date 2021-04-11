@@ -16,7 +16,7 @@
 
       <!-- Modal body -->
       <div class="modal-body">
-	  <img class="img img-responsive" src="../../graniemart/templates/'.$content_product['image'].'" style="max-height:20em;max-width:100%;" alt="">
+	  <img class="img img-responsive" src="https://www.stonemarket.in/'.$content_product['image'].'" style="max-height:20em;max-width:100%;" alt="">
          <table border="1" class="table" style="">
 						<tbody>
 						<tr>

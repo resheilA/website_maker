@@ -47,7 +47,7 @@
 					echo '			
 							<div class="col-md-4">
 								<figure class="card card-product text-dark">
-									<div class="img-wrap"><img src="../../graniemart/templates/'.$product["image"].'"></div>
+									<div class="img-wrap"><img src="'.$prefix_image.$product["image"].'"></div>
 									<figcaption class="info-wrap">
 											<h4 class="title"><b>'.$product["product_name"].'</b></h4>
 											<p class="desc">'.$product["details"].'</p>

@@ -1,4 +1,5 @@
 <?php 
+$prefix_image = "http://stonemarket.in/website_creator/";
 function getContrastColor($hexColor) 
 {
 

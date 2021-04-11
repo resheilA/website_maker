@@ -22,7 +22,7 @@ include("content_products.php");
 <body>
 <?php 
 	include_once("elements/navbar/1.php");
-	include_once("pages/products/1.php");
+	include_once("pages/products/2.php");
 	include_once("elements/footers/2.php");
 ?>	
 </body>

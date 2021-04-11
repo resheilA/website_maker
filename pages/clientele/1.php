@@ -64,7 +64,7 @@
 				foreach($content_client as $client){
 					echo '
 			<div class="col-lg-3 col-md-4 col-xs-6">
-                <div class="client-logo"> <img src="'$prefix_image.$client["client_logo"].'" class="img-fluid" alt=""> </div>
+                <div class="client-logo"> <img src="'.$prefix_image.$client["client_logo"].'" class="img-fluid" alt=""> </div>
             </div>
 			';
 				}

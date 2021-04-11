@@ -59,4 +59,5 @@ $sql = "SELECT * FROM website_domain
 		
 $content_banner = singletable_all( $sql );
  $content_banner = $content_banner[0];
+ $prefix_image = "http://stonemarket.in/";
 ?>

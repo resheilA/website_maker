@@ -246,7 +246,7 @@ body{
 					<article class="col-md-4 col-sm-6 portfolio-item web-design apps psd" data-toggle="modal" data-target="#productModal'.$product["pid"].'">
 						<div class="portfolio-thumb in">
 							<a class="main-link">
-								<img class="img-responsive img-center" src="../../graniemart/templates/'.$product['image'].'" style="max-height:20em;" alt="">
+								<img class="img-responsive img-center" src="https://www.stonemarket.in/'.$product['image'].'" style="max-height:20em;" alt="">
 								<h2 class="project-title">'.$product['product_name'].'</h2>
 								<span class="overlay-mask"></span>
 							</a>							

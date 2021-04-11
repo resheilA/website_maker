@@ -1,7 +1,6 @@
-
 <!---------- NAVIGATION BAR ------->
 <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color:black; color:white">
-  <a class="navbar-brand" style="color:<?php echo $navbar[1]; ?>;" href="#">Navbar</a>
+  <a class="navbar-brand" style="color:;" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>

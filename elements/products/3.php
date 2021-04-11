@@ -44,7 +44,7 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
             <div class="product-grid">
                 <div class="product-image">
                     <a href="#">
-                       <img class="pic-1" src="../../graniemart/templates/'.$product["image"].'"> </a>                                       
+                       <img class="pic-1" src="'.$prefix_image.$product["image"].'"> </a>                                       
                 </div>
                 <ul class="rating">
                     <li class="fa fa-star"></li>

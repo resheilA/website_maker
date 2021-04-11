@@ -44,7 +44,7 @@ h4{
 														<!--1st row--->
 								<div class="row">
 									<div class="col-lg-12 col-md-12 col-sm-12">
-										<a href=""><img style="max-width: 100%;" src="../../graniemart/templates/'.$product["image"].'" alt="placeholder image" class="img-fluid"/></a>
+										<a href=""><img style="max-width: 100%;" src="'.$prefix_image.$product["image"].'" alt="placeholder image" class="img-fluid"/></a>
 										 <p><center class="mb-3" style="text-align:justify;">'.$product["details"].'</center></p>
 									</div>
 								</div>

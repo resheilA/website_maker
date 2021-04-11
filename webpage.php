@@ -1,6 +1,6 @@
 <?php
-include("content.php");
 include("functions.php");
+include("content.php");
 $primary_color = "#28334AFF";
 $secondary_color = "#F8de44ff";
 

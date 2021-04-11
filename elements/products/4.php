@@ -56,7 +56,7 @@
 					 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 						<div class="box card">
 							<div class="box cardImg">
-								<img src="../../graniemart/templates/'.$product["image"].'" alt="...">
+								<img src="'.$prefix_image.$product["image"].'" alt="...">
 							</div>
 							<div class="info">
 								<h3>'.$product['product_name'].'</h3>

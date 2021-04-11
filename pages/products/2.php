@@ -58,7 +58,7 @@ body{
 								<div class="panel-body p-3">
 									<div class="row">
 										<div class="col-sm-5">
-											<a data-toggle="modal" data-target="#productModal'.$product["pid"].'"><img src="../../graniemart/templates/'.$product['image'].'" class="img-responsive"></a>
+											<a data-toggle="modal" data-target="#productModal'.$product["pid"].'"><img src="https://www.stonemarket.in/'.$product['image'].'" class="img-responsive"></a>
 										</div>
 										<div class="col-sm-7">
 											<h4 class="title-store">

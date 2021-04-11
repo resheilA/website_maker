@@ -113,7 +113,7 @@ i.red{
 				echo '
 			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
               <div class="img-box">
-                <img src="../../graniemart/templates/website_creator/'.$member["member_image"].'" class="img-fluid">                
+                <img src="'.$prefix_image.$member["member_image"].'" class="img-fluid">                
               </div>            
 			 <h1>'.$member["member_name"].'</h1>
               <h2>'.$member["member_pos"].'</h2>

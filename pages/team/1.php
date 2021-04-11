@@ -146,7 +146,7 @@ section .section-title {
                         <div class="frontside">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="../../graniemart/templates/website_creator/'.$member["member_image"].'" alt="card image"></p>
+                                    <p><img class=" img-fluid" src="'.$prefix_image.$member["member_image"].'" alt="card image"></p>
                                     <h4 class="card-title">'.$member["member_name"].'</h4>
                                     <p class="card-text">'.$member["member_pos"].'</p>                                    
                                 </div>

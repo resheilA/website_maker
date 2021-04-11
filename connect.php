@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "website_creator";
+$dbname = "granimart";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

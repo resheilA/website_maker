@@ -54,7 +54,7 @@ em {
 					echo '
 					<div class="row mb-5">
 						<div class="col-md-6 text-md-right">
-						  <img src="../../graniemart/templates/website_creator/'.$member["member_image"].'" alt="" class="img-fluid border-white border-w-5 w-50 w-md-80 w-lg-60 rounded-circle">
+						  <img src="'.$prefix_image.$member["member_image"].'" alt="" class="img-fluid border-white border-w-5 w-50 w-md-80 w-lg-60 rounded-circle">
 						</div>
 						<div class="col-md-6 flex-valign">
 						  <h3 class="text-uppercase text-letter-spacing-xs mt-0 mb-1 text-dark font-weight-bold">

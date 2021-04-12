@@ -62,7 +62,7 @@ include_once("elements/navbar/1.php");
 
 $services = array($primary_color, $secondary_color, getContrastColor($primary_color), getContrastColor($secondary_color));
 
-include_once("elements/banners/2.php");
+include_once("elements/banners/1.php");
 
 
 echo '<div class="p-3" style="background-color:'.$secondary_color.';color:'.getContrastColor($secondary_color).'">';

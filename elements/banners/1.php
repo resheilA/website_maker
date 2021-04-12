@@ -8,7 +8,7 @@ echo '
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
-    <div class="carousel-inner" role="listbox">';?>
+    <div class="carousel-inner" role="listbox" style="height:100px;">';?>
      <?php 
 				
 	

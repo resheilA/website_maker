@@ -16,7 +16,7 @@ echo '
 	{
 	echo '	 
 	  <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item active" style="background-image: url(\''.$prefix_image.$content_banner["banner_image_1"].'\')">
+      <div class="carousel-item active" style="background-image: url(\''.$prefix_image_banner.$content_banner["banner_image_1"].'\')">
         <div class="carousel-caption d-md-block">          
           <h3>'.$content_banner["banner_text_1"].'</h3>
         </div>
@@ -28,7 +28,7 @@ echo '
 	{
 	echo'
 	  <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url(\''.$prefix_image.$content_banner["banner_image_2"].'\')">
+      <div class="carousel-item" style="background-image: url(\''.$prefix_image_banner.$content_banner["banner_image_2"].'\')">
         <div class="carousel-caption d-md-block">          
           <h3>'.$content_banner["banner_text_2"].'</h3>
         </div>
@@ -39,7 +39,7 @@ echo '
 	{
 	echo'
 	    <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url(\''.$prefix_image.$content_banner["banner_image_3"].'\')">
+      <div class="carousel-item" style="background-image: url(\''.$prefix_image_banner.$content_banner["banner_image_3"].'\')">
         <div class="carousel-caption d-md-block">          
           <h3>'.$content_banner["banner_text_3"].'</h3>
         </div>

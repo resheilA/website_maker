@@ -62,7 +62,7 @@ include_once("elements/navbar/1.php");
 
 $services = array($primary_color, $secondary_color, getContrastColor($primary_color), getContrastColor($secondary_color));
 
-$prefix_image = "http://stonemarket.in/website_creator/";
+$prefix_image_banner = "http://stonemarket.in/website_creator/";
 include_once("elements/banners/1.php");
 
 

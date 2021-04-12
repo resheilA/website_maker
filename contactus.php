@@ -4,6 +4,9 @@ $primary_color = "#28334AFF";
 $secondary_color = "#F8de44ff";
 $font_color =  getContrastColor($primary_color);
 
+$did = "41DWF242D";
+include("getalldata.php");
+
 ?>
 
 

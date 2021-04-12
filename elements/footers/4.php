@@ -1,3 +1,4 @@
+<?php include("navbar_content.php"); ?>
 <style>
 
 
@@ -140,68 +141,41 @@
             <div class="col-lg-6">
                 <div class="section-title">
                     <h2>Get In Touch</h2>
-                    <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites</p>
+                    <p><?php echo $content_location[0]["about_us"]; ?></p>
                 </div>
             </div>
         </div>
         <div class="row flex-row-reverse">
             <div class="col-md-7 col-lg-8 m-15px-tb">
                 <div class="contact-form">
-                     <form action="/" method="post" class="contactform contact_form" id="contact_form">
-                        <div class="returnmessage valid-feedback p-15px-b" data-success="Your message has been received, We will contact you soon."></div>
-                        <div class="empty_notice invalid-feedback p-15px-b"><span>Please Fill Required Fields</span></div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input id="name" type="text" placeholder="Full Name" class="form-control"> 
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input id="email" type="text" placeholder="Email Address" class="form-control">  
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <input id="subject" type="text" placeholder="Subject" class="form-control"> 
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <textarea id="message" placeholder="Message" class="form-control" rows="3"></textarea> 
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="send">
-                                    <a id="send_message" class="px-btn theme" href="#"><span>Contact Us</span> <i class="arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-5 col-lg-4 m-15px-tb">
-                <div class="contact-name">
-                    <h5>Mail</h5>
-                    <p>info@domainname.com</p>
-                </div>
-                <div class="contact-name">
-                    <h5>Visit My Studio</h5>
-                    <p>Warnwe Park Streetperrine, <br>FL 33157 New York City</p>
+                    <div class="contact-name">
+                    <h5>Visit Us</h5>
+                    <p><?php echo $content_location[0]["address"]; ?> <br><?php echo $content_location[0]["city"]." - ".$content_location[0]["pincode"]; ?></p>
                 </div>
                 <div class="contact-name">
                     <h5>Phone</h5>
-                    <p>+01 123 654 8096</p>
+                    <p>+91 <?php echo $content_location[0]["contact_no"]; ?> / +91 <?php echo $content_location[0]["contact_no"]; ?></p>
                 </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-4 m-15px-tb">
+			  <div class="contact-name">
+                    <h3><?php echo $content_location[0]["name"]; ?></h3>
+                </div>
+                <div class="contact-name">
+                    <h5>Mail</h5>
+                    <p><?php echo $content_location[0]["email"]; ?></p>
+                </div>
+               
                 <div class="social-share nav">
-                    <a class="dribbble" href="#">
-                        <i class="fab fa-dribbble"></i>
+                    <a class="dribbble" href="<?php echo $content_location[0]["instagram"]; ?>">
+                        <i class="fab fa-instagram"></i>
                     </a>
-                    <a class="behance" href="#">
-                        <i class="fab fa-behance"></i>
+                    <a class="behance" href="<?php echo $content_location[0]["facebook"]; ?>">
+                        <i class="fab fa-facebook"></i>
                     </a>
-                    <a class="linkedin" href="#">
-                        <i class="fab fa-linkedin-in"></i>
+                    <a class="linkedin" href="<?php echo $content_location[0]["twitter"]; ?>">
+                        <i class="fab fa-twitter"></i>
                     </a>
                 </div>
             </div>

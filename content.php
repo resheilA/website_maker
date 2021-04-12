@@ -2,12 +2,6 @@
 $did = "41DWF242D";
 include("getalldata.php");
 
-$sql = "SELECT * FROM website_domain 
-		INNER JOIN website_general ON website_domain.did = website_general.did
-		WHERE website_domain.did = '".$did."'
-		";
-
-$content_general = singletable_all( $sql );
 		
 $sql = "SELECT * FROM website_domain 
 		INNER JOIN website_clients ON website_domain.did = website_clients.did

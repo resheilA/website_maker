@@ -10,8 +10,6 @@ $primary_color ="#F8de44ff";
 $primary_color = "#c70039";
 $secondary_color = "#111d5e";
 
-$services = array($primary_color, $secondary_color, getContrastColor($primary_color), getContrastColor($secondary_color));
-
 
 ?>
 <!DOCTYPE html>
@@ -61,6 +59,9 @@ $services = array($primary_color, $secondary_color, getContrastColor($primary_co
 
 <?php 
 include_once("elements/navbar/1.php");
+
+$services = array($primary_color, $secondary_color, getContrastColor($primary_color), getContrastColor($secondary_color));
+
 include_once("elements/banners/2.php");
 
 
@@ -76,5 +77,5 @@ echo '<div class="p-3" style="background-color:'.$secondary_color.';color:'.getC
 include_once("elements/services/3.php");
 echo "</div>";
 
-include_once("elements/footers/1.php");
+include_once("elements/footers/4.php");
 ?>

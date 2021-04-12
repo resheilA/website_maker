@@ -1,3 +1,4 @@
+<?php include("navbar_content.php"); ?>
 <style>
 
 .context-dark, .bg-gray-dark, .bg-primary {
@@ -55,45 +56,81 @@ ul, ol {
         <div class="container">
           <div class="row row-30">
             <div class="col-md-4 col-xl-5">
-              <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
-                <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
+              <div class="pr-xl-4">
+				<h1><?php echo $content_location[0]["name"]; ?> </h1>
+                <p><?php echo $content_location[0]["about_us"]; ?></p>
                 <!-- Rights-->
-                <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+                <p class="rights"><span>©  </span><span class="copyright-year"><?php echo date("Y"); ?></span><span> </span><span><?php echo $content_location[0]["name"]; ?></span><span>. </span><span>All Rights Reserved.</span></p>
               </div>
             </div>
             <div class="col-md-4">
               <h5>Contacts</h5>
               <dl class="contact-list">
                 <dt>Address:</dt>
-                <dd>798 South Park Avenue, Jaipur, Raj</dd>
+                <dd><?php echo $content_location[0]["address"]. "<br> ". $content_location[0]["city"]." - ".$content_location[0]["pincode"]; ?></dd>
               </dl>
               <dl class="contact-list">
                 <dt>email:</dt>
-                <dd><a href="mailto:#">dkstudioin@gmail.com</a></dd>
+                <dd><a href="mailto:#"><?php echo $content_location[0]["email"]; ?></a></dd>
               </dl>
               <dl class="contact-list">
                 <dt>phones:</dt>
-                <dd><a href="tel:#">https://karosearch.com</a> <span>or</span> <a href="tel:#">https://karosearch.com</a>
+                <dd><a href="tel:#"><?php echo $content_location[0]["contact_no"]; ?></a> <span>or</span> <?php echo $content_location[0]["other_number"]; ?>
                 </dd>
               </dl>
             </div>
             <div class="col-md-4 col-xl-3">
               <h5>Links</h5>
               <ul class="nav-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Pricing</a></li>
+			  <li>
+				<a style="color:;" href="aboutus.php">About us</a>
+			  </li>
+			  <?php 
+			  if($content_productss[0]["product_exist"] > 0 ){
+				echo '
+			  <li>
+				<a style="color:;" href="products.php">Products</a>
+			  </li>   
+					';	  
+			  }
+			  
+			  
+			  if($content_teams[0]["team_exist"] > 0 ){
+				echo '
+			  <li>
+				<a style="color:;" href="team.php">Team</a>
+			  </li>    	  
+					';	  
+			  }
+			  
+			  if($content_gallerys[0]["gallery_exist"] > 0 ){
+				echo '
+			  <li>
+				<a style="color:;" href="gallery.php">Gallery</a>
+			  </li>    
+					';	  			
+			  }
+			  
+			  if($content_clients[0]["client_exist"] > 0 ){
+				echo '
+			  <li>
+				<a style="color:;" href="clientele.php">Clients</a>
+			  </li>    
+					';	  			
+			  }
+			  ?>
+			  
+			  <li>
+				<a style="color:;" href="contactus.php">Contact us</a>
+			  </li>
               </ul>
             </div>
           </div>
         </div>
         <div class="row no-gutters social-container">
-          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
-          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
-          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
-          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+          <div class="col"><a class="social-inner" href="<?php echo $content_location[0]["facebook"]; ?>"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+          <div class="col"><a class="social-inner" href="<?php echo $content_location[0]["instagram"]; ?>"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+          <div class="col"><a class="social-inner" href="<?php echo $content_location[0]["twitter"]; ?>"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>         
         </div>
       </footer>
 	  

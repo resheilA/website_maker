@@ -1,11 +1,11 @@
 <?php
 include("functions.php");
-$primary_color = "#28334AFF";
-$secondary_color = "#F8de44ff";
-$font_color =  getContrastColor($primary_color);
 
-include("content_products.php");
+
+include_once("content_products.php");
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

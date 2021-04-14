@@ -3,7 +3,7 @@ include("getidid.php");
 
 
 		
-echo $sql = "SELECT * FROM website_domain 
+$sql = "SELECT * FROM website_domain 
 		INNER JOIN website_clients ON website_domain.did = website_clients.did
 		WHERE website_domain.did = '".$did."'
 		";

@@ -1,6 +1,5 @@
 <?php 
 include("getidid.php");
-include("getalldata.php");
 
  
  $sql = "SELECT * FROM seller_business 

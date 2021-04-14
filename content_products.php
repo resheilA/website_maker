@@ -1,7 +1,5 @@
 <?php 
 include("getidid.php");
-include("getalldata.php");
-
 if(isset($_GET["type_sort"]) && ($_GET["type_sort"] != null))
 {
   $sql = "SELECT * FROM seller_product

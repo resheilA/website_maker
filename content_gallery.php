@@ -1,7 +1,5 @@
 <?php 
 include("getidid.php");
-include("getalldata.php");
-
  
  $sql = "SELECT * FROM website_domain
 		 INNER JOIN website_gallery ON website_gallery.did = website_domain.did 		 

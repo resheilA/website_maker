@@ -14,8 +14,6 @@ $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https"
 
 $domain_name = get_domain($actual_link); // outputs 'somedomain.co.uk'
 
-include("getalldata.php");
-
  $sql = "SELECT * FROM website_domain		
 		 WHERE website_domain.domain_name = '".$domain_name."'";
  $domain_did = singletable_all( $sql );		 

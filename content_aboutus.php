@@ -1,5 +1,5 @@
 <?php 
-$did = "41DWF242D";
+include("getidid.php");
 include("getalldata.php");
 
  

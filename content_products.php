@@ -1,5 +1,5 @@
 <?php 
-$did = "41DWF242D";
+include("getidid.php");
 include("getalldata.php");
 
 if(isset($_GET["type_sort"]) && ($_GET["type_sort"] != null))

@@ -9,7 +9,6 @@ include("getidid.php");
 
 
 ?>
-?>
 
 
 <!DOCTYPE html>

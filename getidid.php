@@ -21,5 +21,5 @@ include("getalldata.php");
  $domain_did = singletable_all( $sql );		 
  
  
-$did = $domain_did[0]["did"];
+echo $did = $domain_did[0]["did"];
 ?>

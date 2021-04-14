@@ -4,9 +4,11 @@ $primary_color = "#28334AFF";
 $secondary_color = "#F8de44ff";
 $font_color =  getContrastColor($primary_color);
 
-$did = "41DWF242D";
-include("getalldata.php");
+include("getidid.php");
+<?php 
 
+
+?>
 ?>
 
 
@@ -25,6 +27,6 @@ include("getalldata.php");
 </head>
 <?php 
 	include_once("elements/navbar/1.php");
-	include_once("pages/contactus/2.php");
+	include_once("pages/contactus/4.php");
 	include_once("elements/footers/2.php");
 ?>	

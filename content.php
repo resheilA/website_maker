@@ -1,6 +1,6 @@
 <?php 
 include("getidid.php");
-include("getalldata.php");
+
 
 		
 echo $sql = "SELECT * FROM website_domain 

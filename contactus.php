@@ -5,7 +5,7 @@ $secondary_color = "#F8de44ff";
 $font_color =  getContrastColor($primary_color);
 
 include("getidid.php");
-<?php 
+
 
 
 ?>

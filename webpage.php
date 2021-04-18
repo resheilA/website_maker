@@ -10,6 +10,11 @@ $primary_color ="#F8de44ff";
 $primary_color = "#c70039";
 $secondary_color = "#111d5e";
 
+		
+$sql = "SELECT * FROM website_design		
+		WHERE website_design.did = '".$did."'
+		";		
+$domain_design = singletable_all( $sql );
 
 ?>
 <!DOCTYPE html>
@@ -58,7 +63,7 @@ $secondary_color = "#111d5e";
 
 
 <?php 
-include_once("elements/navbar/1.php");
+include_once("elements/navbar/".$domain_design["navbar_element"].".php");
 
 $services = array($primary_color, $secondary_color, getContrastColor($primary_color), getContrastColor($secondary_color));
 

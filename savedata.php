@@ -159,14 +159,14 @@ $keypiece = explode("|", $key);
 		if($flag_auth == "true"){
 		include("connect.php");	
 				
-		   echo $sql = "INSERT INTO ".$tablename." (".$variable_string.")
+				$sql = "INSERT INTO ".$tablename." (".$variable_string.")
 				VALUES (".$value_string.")";
 	
 				if ($conn->query($sql) === TRUE) {								
 					//header('Location: '.$result['redirect_to']);
 					//echo "New record created successfully";
 				} else {
-					echo "Error: " . $sql . "<br>" . $conn->error;die();
+				//	echo "Error: " . $sql . "<br>" . $conn->error;die();
 					$error_mysql = '
 								<div class="alert alert-danger">
 							<strong>Error!</strong> Cannot Save. Please check the details you have entered.

@@ -580,16 +580,24 @@ select.form-control[multiple] {
                 <p>We look forward to do business with you. Please leave your details with your message</p>
 
                 <div class="find-widget">
-                 Company:  <a href="https://hostriver.ro"><?php echo $domain_design[0]["navbar_element"]; ?></a>
+                 Address: <a href="#"><?php echo $content_location[0]["address"]; ?></a>
                 </div>
                 <div class="find-widget">
-                 Address: <a href="#"><?php echo $domain_design[0]["navbar_element"]; ?></a>
-                </div>
-                <div class="find-widget">
-                  Phone:  <a href="#"><?php echo $domain_design[0]["navbar_element"]; ?></a>
+                  Phone:  <a href="#"><?php echo $content_location[0]["contact_no"]; ?></a>
                 </div>
                 
               </div>
+			  <?php
+										
+					  $sql = "SELECT * FROM seller_location
+							 INNER JOIN seller_general ON seller_general.uid = seller_location.uid 
+							 INNER JOIN seller_business ON seller_general.uid = seller_business.uid 
+							 INNER JOIN seller_contact ON seller_general.uid = seller_contact.uid 
+							 INNER JOIN website_domain ON seller_general.uid = website_domain.uid 
+							  WHERE website_domain.did = '".$did."'";
+					 $content_location = singletable_all( $sql );		 
+
+					?>
               <!-- contact form -->
               <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
                   <form method="post">

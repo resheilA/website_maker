@@ -14,7 +14,7 @@
     <!--Contact heading-->
     <h2 class="h1 m-0">Contact us</h2>
     <!--Contact description-->
-    <p class="pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.</p>
+    <p class="pb-4">We would love to hear from you !</p>
 
     <div class="row">
 
@@ -38,21 +38,21 @@
                         <div class="input-group">
                             <div class="input-group-addon bg-light"><i class="fa fa-user text-primary"></i></div>
 							<input type="hidden" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username" name="website_responses|did" value="<?php echo $did;?>">
-                            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username" name="website_responses|response_name">
+                            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Name" name="website_responses|response_name">
                         </div>
                     </div>
                     <div class="form-group">
                         <label>Your email</label>
                         <div class="input-group mb-2 mb-sm-0">
                             <div class="input-group-addon bg-light"><i class="fa fa-envelope text-primary"></i></div>
-                            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username"  name="website_responses|response_email">
+                            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Email"  name="website_responses|response_email">
                         </div>
                     </div>                  
                     <div class="form-group">
                         <label>Message</label>
                         <div class="input-group mb-2 mb-sm-0">
                             <div class="input-group-addon bg-light"><i class="fa fa-pencil text-primary"></i></div>
-                            <textarea class="form-control" name="website_responses|response_details"></textarea>
+                            <textarea class="form-control" name="website_responses|response_details" placeholder="Enter your message"></textarea>
                         </div>
                     </div>
 

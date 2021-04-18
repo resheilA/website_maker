@@ -577,7 +577,7 @@ select.form-control[multiple] {
           <div class="row">
               <!-- Section Titile -->
               <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content.</p>
+                <p>We look forward to do business with you. Please leave your details with your message</p>
 
                 <div class="find-widget">
                  Company:  <a href="https://hostriver.ro">HostRiver</a>
@@ -602,25 +602,19 @@ select.form-control[multiple] {
                       <!-- Name -->
                       <div class="form-group label-floating">
                         <label class="control-label" for="name">Name</label>
-                        <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                        <input class="form-control" id="name" name="website_responses|response_name" type="text" required data-error="Please enter your name">
                         <div class="help-block with-errors"></div>
                       </div>
                       <!-- email -->
                       <div class="form-group label-floating">
                         <label class="control-label" for="email">Email</label>
-                        <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                        <input class="form-control" id="email" name="website_responses|response_email" type="email" required data-error="Please enter your Email">
                         <div class="help-block with-errors"></div>
-                      </div>
-                      <!-- Subject -->
-                      <div class="form-group label-floating">
-                        <label class="control-label">Subject</label>
-                        <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
-                        <div class="help-block with-errors"></div>
-                      </div>
+                      </div>               
                       <!-- Message -->
                       <div class="form-group label-floating">
                           <label for="message" class="control-label">Message</label>
-                          <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                          <textarea class="form-control" rows="3" name="website_responses|response_details" id="message" required data-error="Write your message"></textarea>
                           <div class="help-block with-errors"></div>
                       </div>
                       <!-- Form Submit -->

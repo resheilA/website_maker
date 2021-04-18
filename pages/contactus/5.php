@@ -117,7 +117,10 @@ p {
                             <div class="text-center px-1">
                                 <div class="forms p-4 py-5 bg-white">
                                     <h5>Send Message</h5>
-                                    <div class="mt-4 inputs"> <input type="text" class="form-control" placeholder="Name"> <input type="text" class="form-control" placeholder="Email"> <textarea class="form-control" placeholder="Type your message"></textarea> </div>
+                                    <div class="mt-4 inputs"> 
+									<input type="text" class="form-control" name="website_responses|response_name" placeholder="Name"> 
+									<input type="text" name="website_responses|response_email" class="form-control" placeholder="Email"> 
+									<textarea class="form-control" name="website_responses|response_details" placeholder="Type your message"></textarea> </div>
                                     <div class="button mt-4 text-left"> <button class="btn btn-dark">Send</button> </div>
                                 </div>
                             </div>

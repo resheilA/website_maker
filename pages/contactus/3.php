@@ -574,6 +574,17 @@ select.form-control[multiple] {
                   <h1 class="section-title">Love to Hear From You</h1>
               </div>
           </div>
+		  			  <?php
+										
+					  $sql = "SELECT * FROM seller_location
+							 INNER JOIN seller_general ON seller_general.uid = seller_location.uid 
+							 INNER JOIN seller_business ON seller_general.uid = seller_business.uid 
+							 INNER JOIN seller_contact ON seller_general.uid = seller_contact.uid 
+							 INNER JOIN website_domain ON seller_general.uid = website_domain.uid 
+							  WHERE website_domain.did = '".$did."'";
+					 $content_location = singletable_all( $sql );		 
+
+					?>
           <div class="row">
               <!-- Section Titile -->
               <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
@@ -587,17 +598,7 @@ select.form-control[multiple] {
                 </div>
                 
               </div>
-			  <?php
-										
-					  $sql = "SELECT * FROM seller_location
-							 INNER JOIN seller_general ON seller_general.uid = seller_location.uid 
-							 INNER JOIN seller_business ON seller_general.uid = seller_business.uid 
-							 INNER JOIN seller_contact ON seller_general.uid = seller_contact.uid 
-							 INNER JOIN website_domain ON seller_general.uid = website_domain.uid 
-							  WHERE website_domain.did = '".$did."'";
-					 $content_location = singletable_all( $sql );		 
 
-					?>
               <!-- contact form -->
               <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
                   <form method="post">

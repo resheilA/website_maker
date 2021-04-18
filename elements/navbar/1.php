@@ -1,7 +1,7 @@
 <?php include("content_navbar.php"); ?>
 <!---------- NAVIGATION BAR ------->
 <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color:black; color:white">
-  <a class="navbar-brand" style="color:;" href=""><?php echo $content_location[0]["name"]; ?> </a>
+  <a class="navbar-brand" style="color:;" href=""><?php echo $content_general[0]["name"]; ?> </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>

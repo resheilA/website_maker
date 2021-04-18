@@ -98,8 +98,7 @@ section .section-title{
 					<div class="card">
 						<div class="card-block block-">						
 							<h3 class="card-title">'.$service["service_name"].'</h3>
-							<p class="card-text">'.$service["service_content"].'</p>
-							<a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more" >Read more</a>
+							<p class="card-text">'.$service["service_content"].'</p>						
 						</div>
 					</div>
 					</div>

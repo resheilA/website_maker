@@ -22,7 +22,7 @@ include("get_design.php");
 <body>
 <?php 
 	include_once("elements/navbar/".$domain_design[0]["navbar_element"].".php");
-	include_once("pages/products/".$domain_design[0]["product_page"].".php");
+	include_once("pages/products/".$domain_design[0]["products_page"].".php");
 	include_once("elements/footers/".$domain_design[0]["footer_element"].".php");
 ?>	
 </body>

@@ -580,21 +580,15 @@ select.form-control[multiple] {
                 <p>We look forward to do business with you. Please leave your details with your message</p>
 
                 <div class="find-widget">
-                 Company:  <a href="https://hostriver.ro">HostRiver</a>
+                 Company:  <a href="https://hostriver.ro"><?php echo $domain_design[0]["navbar_element"]; ?></a>
                 </div>
                 <div class="find-widget">
-                 Address: <a href="#">4435 Berkshire Circle Knoxville</a>
+                 Address: <a href="#"><?php echo $domain_design[0]["navbar_element"]; ?></a>
                 </div>
                 <div class="find-widget">
-                  Phone:  <a href="#">+ 879-890-9767</a>
+                  Phone:  <a href="#"><?php echo $domain_design[0]["navbar_element"]; ?></a>
                 </div>
                 
-                <div class="find-widget">
-                  Website:  <a href="https://uny.ro">www.uny.ro</a>
-                </div>
-                <div class="find-widget">
-                   Program: <a href="#">Mon to Sat: 09:30 AM - 10.30 PM</a>
-                </div>
               </div>
               <!-- contact form -->
               <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">

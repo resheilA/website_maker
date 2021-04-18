@@ -86,29 +86,40 @@ p {
 }
 
 </style>
-<div class="wrapper">
+<div class="wrapper container">
     <div class="overlay">
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-md-9">
                 <div class="contact-us text-center">
                     <h3>Contact Us</h3>
-                    <p class="mb-5">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+					<?php
+										
+					  $sql = "SELECT * FROM seller_location
+							 INNER JOIN seller_general ON seller_general.uid = seller_location.uid 
+							 INNER JOIN seller_business ON seller_general.uid = seller_business.uid 
+							 INNER JOIN seller_contact ON seller_general.uid = seller_contact.uid 
+							 INNER JOIN website_domain ON seller_general.uid = website_domain.uid 
+							  WHERE website_domain.did = '".$did."'";
+					 $content_location = singletable_all( $sql );		 
+
+					?>
+					<p class="mb-5">We would love to hear from you.</p>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="mt-5 text-center px-3">
                                 <div class="d-flex flex-row align-items-center"> <span class="icons"><i class="fa fa-map-marker"></i></span>
                                     <div class="address text-left"> <span>Address</span>
-                                        <p>461, Sugar camp, San jose, California, USA</p>
+                                        <p><?php echo $content_location[0]["address"]; ?></p>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-row align-items-center mt-3"> <span class="icons"><i class="fa fa-phone"></i></span>
                                     <div class="address text-left"> <span>Phone</span>
-                                        <p>501 205 2929</p>
+                                        <p><?php echo $content_location[0]["contact_no"]; ?></p>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-row align-items-center mt-3"> <span class="icons"><i class="fa fa-envelope-o"></i></span>
-                                    <div class="address text-left"> <span>Address</span>
-                                        <p>contact@bbbootstrap.com</p>
+                                    <div class="address text-left"> <span>Email</span>
+                                        <p><?php echo $content_location[0]["email"]; ?></p>
                                     </div>
                                 </div>
                             </div>

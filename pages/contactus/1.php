@@ -31,34 +31,27 @@
                     </div>
                 </div>
                 <div class="card-body p-3">
-
+				<form method="post">
                     <!--Body-->
                     <div class="form-group">
                         <label>Your name</label>
                         <div class="input-group">
                             <div class="input-group-addon bg-light"><i class="fa fa-user text-primary"></i></div>
-                            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username" name="website_responses|response_name">
                         </div>
                     </div>
                     <div class="form-group">
                         <label>Your email</label>
                         <div class="input-group mb-2 mb-sm-0">
                             <div class="input-group-addon bg-light"><i class="fa fa-envelope text-primary"></i></div>
-                            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username"  name="website_responses|response_email">
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Service</label>
-                        <div class="input-group mb-2 mb-sm-0">
-                            <div class="input-group-addon bg-light"><i class="fa fa-tag prefix text-primary"></i></div>
-                            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
-                        </div>
-                    </div>
+                    </div>                  
                     <div class="form-group">
                         <label>Message</label>
                         <div class="input-group mb-2 mb-sm-0">
                             <div class="input-group-addon bg-light"><i class="fa fa-pencil text-primary"></i></div>
-                            <textarea class="form-control"></textarea>
+                            <textarea class="form-control" name="website_responses|response_details"></textarea>
                         </div>
                     </div>
 

@@ -25,7 +25,7 @@ include("get_design.php");
 <?php 
 	include_once("elements/navbar/".$domain_design[0]["navbar_element"].".php");
 
-	include_once("pages/aboutus/".$domain_design[0]["navbar_page"].".php");
+	include_once("pages/aboutus/".$domain_design[0]["about_us_page"].".php");
 
 
 	include_once("elements/footers/".$domain_design[0]["footer_element"].".php");

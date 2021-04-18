@@ -6,7 +6,7 @@ $font_color =  getContrastColor($primary_color);
 
 include("getidid.php");
 
-
+include("get_design.php");	
 
 ?>
 
@@ -25,7 +25,7 @@ include("getidid.php");
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
 </head>
 <?php 
-	include_once("elements/navbar/1.php");
-	include_once("pages/contactus/4.php");
-	include_once("elements/footers/2.php");
+	include_once("elements/navbar/".$domain_design[0]["navbar_element"].".php");
+	include_once("pages/contactus/".$domain_design[0]["contact_us_page"].".php");
+	include_once("elements/footers/".$domain_design[0]["footer_element"].".php");
 ?>	

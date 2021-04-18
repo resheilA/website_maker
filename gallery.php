@@ -4,6 +4,7 @@ $primary_color = "#28334AFF";
 $secondary_color = "#F8de44ff";
 $font_color =  getContrastColor($primary_color);
 include("content_gallery.php");
+include("get_design.php");	
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,10 +50,10 @@ include("content_gallery.php");
 <body>
 
 	<?php 
-	include_once("elements/navbar/1.php");
+	include_once("elements/navbar/".$domain_design[0]["navbar_element"].".php");
 
-	include("pages/gallery/1.php"); 
-	include_once("elements/footers/2.php");
+	include("pages/gallery/".$domain_design[0]["gallery_page"].".php"); 
+	include_once("elements/footers/".$domain_design[0]["footer_element"].".php");
 	?>
 
 

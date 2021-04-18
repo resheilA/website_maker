@@ -5,6 +5,8 @@ $primary_color = "#28334AFF";
 $secondary_color = "#F8de44ff";
 $font_color =  getContrastColor($primary_color);
 $prefix_image = "/";
+
+include("get_design.php");	
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,11 +23,11 @@ $prefix_image = "/";
 
 </head>
 <?php 
-	include_once("elements/navbar/1.php");
+	include_once("elements/navbar/".$domain_design[0]["navbar_element"].".php");
 
-	include_once("pages/aboutus/2.php");
+	include_once("pages/aboutus/".$domain_design[0]["navbar_page"].".php");
 
 
-	include_once("elements/footers/2.php");
+	include_once("elements/footers/".$domain_design[0]["footer_element"].".php");
 ?>	
 

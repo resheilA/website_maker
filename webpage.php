@@ -10,12 +10,7 @@ $primary_color ="#F8de44ff";
 $primary_color = "#c70039";
 $secondary_color = "#111d5e";
 
-		
-$sql = "SELECT * FROM website_design		
-		WHERE website_design.did = '".$did."'
-		";		
-$domain_design = singletable_all( $sql );
-
+include("get_design.php");	
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -76,11 +71,11 @@ include_once("elements/aboutus/".$domain_design[0]["about_us_element"].".php");
 echo '</div>';
 
 echo '<div class="p-3" style="background-color:'.$primary_color.';color:'.getContrastColor($primary_color).'">';
-include_once("elements/products/".$domain_design[0]["product_element"].".php");
+include_once("elements/products/".$domain_design[0]["products_element"].".php");
 echo '</div>';
 
 echo '<div class="p-3" style="background-color:'.$secondary_color.';color:'.getContrastColor($secondary_color).'">';
-include_once("elements/services/".$domain_design[0]["service_element"].".php");
+include_once("elements/services/".$domain_design[0]["services_element"].".php");
 echo "</div>";
 
 include_once("elements/footers/".$domain_design[0]["footer_element"].".php");

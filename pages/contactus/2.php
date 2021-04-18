@@ -49,6 +49,7 @@ body{
 			</div>
 		</div>
 		<div class="col-md-9">
+		<form method="post">
 			<div class="contact-form">
 				<div class="form-group">
 				  <label class="control-label col-sm-2" for="fname">First Name:</label>

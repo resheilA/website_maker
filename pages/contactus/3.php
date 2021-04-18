@@ -598,7 +598,7 @@ select.form-control[multiple] {
               </div>
               <!-- contact form -->
               <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
-                  <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                  <form method="post">
                       <!-- Name -->
                       <div class="form-group label-floating">
                         <label class="control-label" for="name">Name</label>

@@ -63,25 +63,25 @@ $domain_design = singletable_all( $sql );
 
 
 <?php 
-include_once("elements/navbar/".$domain_design["navbar_element"].".php");
+include_once("elements/navbar/".$domain_design[0]["navbar_element"].".php");
 
 $services = array($primary_color, $secondary_color, getContrastColor($primary_color), getContrastColor($secondary_color));
 
 $prefix_image_banner = "http://stonemarket.in/website_creator/";
-include_once("elements/banners/2.php");
+include_once("elements/banners/".$domain_design[0]["banner_element"].".php");
 
 
 echo '<div class="p-3" style="background-color:'.$secondary_color.';color:'.getContrastColor($secondary_color).'">';
-include_once("elements/aboutus/1.php");
+include_once("elements/aboutus/".$domain_design[0]["about_us_element"].".php");
 echo '</div>';
 
 echo '<div class="p-3" style="background-color:'.$primary_color.';color:'.getContrastColor($primary_color).'">';
-include_once("elements/products/4.php");
+include_once("elements/products/".$domain_design[0]["product_element"].".php");
 echo '</div>';
 
 echo '<div class="p-3" style="background-color:'.$secondary_color.';color:'.getContrastColor($secondary_color).'">';
-include_once("elements/services/3.php");
+include_once("elements/services/".$domain_design[0]["service_element"].".php");
 echo "</div>";
 
-include_once("elements/footers/4.php");
+include_once("elements/footers/".$domain_design[0]["footer_element"].".php");
 ?>

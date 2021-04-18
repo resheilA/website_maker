@@ -37,7 +37,7 @@
                         <label>Your name</label>
                         <div class="input-group">
                             <div class="input-group-addon bg-light"><i class="fa fa-user text-primary"></i></div>
-							<input type="hidden" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username" name="website_responses|response_name" value="<?php echo $did;?>">
+							<input type="hidden" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username" name="website_responses|did" value="<?php echo $did;?>">
                             <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username" name="website_responses|response_name">
                         </div>
                     </div>

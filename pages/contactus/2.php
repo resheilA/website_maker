@@ -52,6 +52,7 @@ body{
 		<form method="post">
 			<div class="contact-form">
 				<div class="form-group">
+				<input type="hidden" name="website_responses|did" value="<?php echo $did;?>">
 				  <label class="control-label col-sm-2" for="fname">First Name:</label>
 				  <div class="col-sm-10">          
 					<input type="text" name="website_responses|response_name" class="form-control" id="fname" placeholder="Enter First Name" name="fname">

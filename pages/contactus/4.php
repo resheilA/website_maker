@@ -58,6 +58,7 @@ body{
                 <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
             </div>
             <form method="post">
+			<input type="hidden" name="website_responses|did" value="<?php echo $did;?>">
                 <h3>Drop Us a Message</h3>
                <div class="row">
                     <div class="col-md-6">

@@ -118,6 +118,7 @@ p {
                                 <div class="forms p-4 py-5 bg-white">
                                     <h5>Send Message</h5>
 									<form method="post">
+									<input type="hidden" name="website_responses|did" value="<?php echo $did;?>">
                                     <div class="mt-4 inputs"> 
 									<input type="text" class="form-control" name="website_responses|response_name" placeholder="Name"> 
 									<input type="text" name="website_responses|response_email" class="form-control" placeholder="Email"> 

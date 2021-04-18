@@ -599,6 +599,7 @@ select.form-control[multiple] {
               <!-- contact form -->
               <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
                   <form method="post">
+				  <input type="hidden" name="website_responses|did" value="<?php echo $did;?>">
                       <!-- Name -->
                       <div class="form-group label-floating">
                         <label class="control-label" for="name">Name</label>

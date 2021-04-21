@@ -68,9 +68,20 @@ body{
                         <div class="form-group">
                             <input type="text" name="website_responses|response_email" class="form-control" placeholder="Your Email *" value="" />
                         </div>
+															  
+				 <!--Form with header-->
+							<div class="form-group small clearfix">
+										<label class="checkbox-inline">Verification Code</label>
+										  <img src="captcha.php" >
+									</div> 
+									<div class="form-group">
+							<input type="text" name="vercode" class="form-control" placeholder="Verfication Code" required="required">
+						</div>
+						
                         <div class="form-group">
                             <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
                         </div>
+						
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">

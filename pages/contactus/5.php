@@ -133,7 +133,21 @@ p {
                                     <div class="mt-4 inputs"> 
 									<input type="text" class="form-control" name="website_responses|response_name" placeholder="Name"> 
 									<input type="text" name="website_responses|response_email" class="form-control" placeholder="Email"> 
-									<textarea class="form-control" name="website_responses|response_details" placeholder="Type your message"></textarea> </div>
+									<textarea class="form-control" name="website_responses|response_details" placeholder="Type your message"></textarea> 
+									
+									
+									
+														  
+ <!--Form with header-->
+			<div class="form-group small clearfix">
+						<label class="checkbox-inline">Verification Code</label>
+						  <img src="captcha.php" >
+					</div> 
+					<div class="form-group">
+            <input type="text" name="vercode" class="form-control" placeholder="Verfication Code" required="required">
+        </div>
+									
+									</div>
                                     <div class="button mt-4 text-left"> <button class="btn btn-dark">Send</button> </div>
                                 </div>
                             </div>

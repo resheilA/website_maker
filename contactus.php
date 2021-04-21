@@ -7,7 +7,7 @@ $font_color =  getContrastColor($primary_color);
 include("getidid.php");
 
 include("get_design.php");	
-include("captcha.php");
+include_once("captcha.php");
 
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {

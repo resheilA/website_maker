@@ -60,7 +60,7 @@
  <!--Form with header-->
 			<div class="form-group small clearfix">
 						<label class="checkbox-inline">Verification Code</label>
-						  <img src="captcha.php" >
+						 <?php echo "<img src='data:image/jpeg;base64," . base64_encode( $rawImageBytes ) . "' />" ?>
 					</div> 
 					<div class="form-group">
             <input type="text" name="vercode" class="form-control" placeholder="Verfication Code" required="required">

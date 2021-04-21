@@ -7,13 +7,12 @@ $font_color =  getContrastColor($primary_color);
 include("getidid.php");
 
 include("get_design.php");	
-include_once("captcha.php");
 
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
 	
-	if ($_POST["vercode"] != $_SESSION["vercode"] OR $_SESSION["vercode"]=='')  {
-        echo "<script>alert('Incorrect verification code');</script>" ;
+	if ($_POST["vercode"] != $_SESSION["vercode"] || $_SESSION["vercode"]=='')  {
+       echo "<script>alert('Incorrect verification code');</script>" ;
     } 
 	else{
 		echo "<script>alert('Verification code match !');</script>" ;
@@ -21,7 +20,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	}
 	
 }	
-
+include_once("captcha.php");
 ?>
 
 
@@ -43,3 +42,4 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	include_once("pages/contactus/".$domain_design[0]["contact_us_page"].".php");
 	include_once("elements/footers/".$domain_design[0]["footer_element"].".php");
 ?>	
+	

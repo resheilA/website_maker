@@ -7,12 +7,20 @@ $font_color =  getContrastColor($primary_color);
 include("getidid.php");
 
 include("get_design.php");	
+include("captcha.php");
 
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
-	include("savedata.php");	
+	
+	if ($_POST["vercode"] != $_SESSION["vercode"] OR $_SESSION["vercode"]=='')  {
+        echo "<script>alert('Incorrect verification code');</script>" ;
+    } 
+	else{
+		echo "<script>alert('Verification code match !');</script>" ;
+		include("savedata.php");	
+	}
+	
 }	
-
 
 ?>
 

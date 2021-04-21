@@ -56,6 +56,13 @@
                         </div>
                     </div>
 
+
+ <!--Form with header-->
+			<div class="form-group small clearfix">
+						<label class="checkbox-inline">Verification Code</label>
+						  <img src="captcha.php" >
+					</div> 
+					
                     <div class="text-center">
                         <button class="btn btn-primary btn-block rounded-0 py-2">Submit</button>
                     </div>
@@ -63,8 +70,7 @@
                 </div>
 
             </div>
-            <!--Form with header-->
-
+           
         </div>
         <!--Grid column-->
 

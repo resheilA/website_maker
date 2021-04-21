@@ -20,7 +20,7 @@ body{
 	.contact-info h2{
 		margin-bottom: 10%;
 	}
-	.col-md-9{
+	.col-md-9-cc{
 		background: #fff;
 		padding: 3%;
 		border-top-right-radius: 0.5rem;
@@ -48,7 +48,7 @@ body{
 				<h4>We would love to hear from you !</h4>
 			</div>
 		</div>
-		<div class="col-md-9">
+		<div class="col-md-9-cc">
 		<form method="post">
 			<div class="contact-form">
 				<div class="form-group">

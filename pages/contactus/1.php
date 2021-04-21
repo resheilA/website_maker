@@ -76,6 +76,20 @@
         </div>
         <!--Grid column-->
 
+
+<?php
+										
+					  $sql = "SELECT * FROM seller_location
+							 INNER JOIN seller_general ON seller_general.uid = seller_location.uid 
+							 INNER JOIN seller_business ON seller_general.uid = seller_business.uid 
+							 INNER JOIN seller_contact ON seller_general.uid = seller_contact.uid 
+							 INNER JOIN website_domain ON seller_general.uid = website_domain.uid 
+							  WHERE website_domain.did = '".$did."'";
+					 $content_location = singletable_all( $sql );		 
+
+					?>
+					
+					
         <!--Grid column-->
         <div class="col-lg-7">
 
@@ -88,18 +102,18 @@
             <div class="row text-center">
                 <div class="col-md-4">
                     <a class="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-map-marker"></i></a>
-                    <p>San Francisco, CA 94126,<br> United States</p>
+                    <p><?php echo $content_location[0]["address"]; ?></p>
                     
                 </div>
 
                 <div class="col-md-4">
                     <a class="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-phone"></i></a>
-                    <p>+ 01 234 567 89, <br> Mon - Fri, 8:00-22:00</p>
+                    <p><?php echo $content_location[0]["contact_no"]; ?> </p>
                 </div>
 
                 <div class="col-md-4">
                     <a class="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-envelope"></i></a>
-                    <p>info@gmail.com <br> sale@gmail.com</p>
+                    <p><?php echo $content_location[0]["email"]; ?></p>
                 </div>
             </div>
 

@@ -70,6 +70,19 @@ body{
 					<textarea class="form-control" name="website_responses|response_details" rows="5" id="comment"></textarea>
 				  </div>
 				</div>
+				
+				
+				
+ <!--Form with header-->
+			<div class="form-group small clearfix">
+						<label class="checkbox-inline">Verification Code</label>
+						  <img src="captcha.php" >
+					</div> 
+					<div class="form-group">
+            <input type="text" name="vercode" class="form-control" placeholder="Verfication Code" required="required">
+        </div>
+		
+				
 				<div class="form-group">        
 				  <div class="col-sm-offset-2 col-sm-10">
 					<button type="submit" class="btn btn-default">Submit</button>

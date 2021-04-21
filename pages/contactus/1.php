@@ -62,7 +62,9 @@
 						<label class="checkbox-inline">Verification Code</label>
 						  <img src="captcha.php" >
 					</div> 
-					
+					<div class="form-group">
+            <input type="text" name="vercode" class="form-control" placeholder="Verfication Code" required="required">
+        </div>
                     <div class="text-center">
                         <button class="btn btn-primary btn-block rounded-0 py-2">Submit</button>
                     </div>

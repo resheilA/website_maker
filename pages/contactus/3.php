@@ -621,6 +621,18 @@ select.form-control[multiple] {
                           <textarea class="form-control" rows="3" name="website_responses|response_details" id="message" required data-error="Write your message"></textarea>
                           <div class="help-block with-errors"></div>
                       </div>
+					  
+					  
+ <!--Form with header-->
+			<div class="form-group small clearfix">
+						<label class="checkbox-inline">Verification Code</label>
+						  <img src="captcha.php" >
+					</div> 
+					<div class="form-group">
+            <input type="text" name="vercode" class="form-control" placeholder="Verfication Code" required="required">
+        </div>
+		
+		
                       <!-- Form Submit -->
                       <div class="form-submit">
                           <button class="btn btn-primary" type="submit" id="form-submit">Send Message</button>

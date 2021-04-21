@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("functions.php");
 $primary_color = "#28334AFF";
 $secondary_color = "#F8de44ff";
@@ -10,13 +11,11 @@ include("get_design.php");
 
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
-	
-	if ($_POST["vercode"] != $_SESSION["vercode"] || $_SESSION["vercode"]=='')  {
+	if (($_POST["vercode"] != $_SESSION["vercode"]) || $_SESSION["vercode"]=='')  {
        echo "<script>alert('Incorrect verification code');</script>" ;
     } 
-	else{
-		echo "<script>alert('Verification code match !');</script>" ;
-		include("savedata.php");	
+	else{				
+		include("savedata.php");			
 	}
 	
 }	

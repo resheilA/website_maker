@@ -169,13 +169,13 @@
                
                 <div class="social-share nav">
                     <a class="dribbble" href="<?php echo $content_location[0]["instagram"]; ?>">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fa fa-instagram"></i>
                     </a>
                     <a class="behance" href="<?php echo $content_location[0]["facebook"]; ?>">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fa fa-facebook"></i>
                     </a>
                     <a class="linkedin" href="<?php echo $content_location[0]["twitter"]; ?>">
-                        <i class="fab fa-twitter"></i>
+                        <i class="fa fa-twitter"></i>
                     </a>
                 </div>
             </div>

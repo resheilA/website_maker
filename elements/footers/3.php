@@ -81,9 +81,9 @@ section .section-title {
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
 					<ul class="list-unstyled list-inline social text-center">
-						<li class="list-inline-item"><a href="<?php echo $content_location[0]["facebook"]; ?>"><i class="fab fa-facebook"></i></a></li>
-						<li class="list-inline-item"><a href="<?php echo $content_location[0]["twitter"]; ?>"><i class="fab fa-twitter"></i></a></li>
-						<li class="list-inline-item"><a href="<?php echo $content_location[0]["instagram"]; ?>"><i class="fab fa-instagram"></i></a></li>						
+						<li class="list-inline-item"><a href="<?php echo $content_location[0]["facebook"]; ?>"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="<?php echo $content_location[0]["twitter"]; ?>"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="<?php echo $content_location[0]["instagram"]; ?>"><i class="fa fa-instagram"></i></a></li>						
 					</ul>
 				</div>
 				</hr>

@@ -8,6 +8,16 @@ $prefix_image = "/";
 
 include("get_design.php");	
 ?>
+<?php 
+
+$sql = "SELECT * FROM website_domain 
+		INNER JOIN website_general ON website_domain.did = website_general.did
+		WHERE website_domain.did = '".$did."'
+		";
+
+$content_general = singletable_all( $sql );
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

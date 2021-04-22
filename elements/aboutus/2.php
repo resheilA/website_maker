@@ -146,22 +146,24 @@ body{margin-top:20px;}
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-7 py-5">
-                <h1 class="mb-4">Bootstrap themes, templates, and more to help you start your next project!</h1>
-                <h2 class="m-0">Start Bootstrap creates free, open source, MIT license, Bootstrap <a href="/themes">themes</a>, <a href="/templates">templates</a>, and <a href="/snippets">code snippets</a> for you to use on any project, <a href="/guides">guides</a> to help you learn more about designing and developing with the Bootstrap framework, and premium Bootstrap products.</h2>
+                <h1 class="mb-4">About Us!</h1>
+                <h2 class="m-0"><p><?php echo $content_business[0]["about_us"]; ?></p></h2>
             </div>
             <div class="col-lg-5">
                 <div class="py-5 px-4 masthead-cards">
                     <div class="d-flex">
-                        <a href="#" class="w-50 pr-3 pb-4">
+                    <!-----------	
+						<a href="#" class="w-50 pr-3 pb-4">
                             <div class="card border-0 border-bottom-red shadow-lg shadow-hover">
                                 <div class="card-body text-center">
                                     <div class="text-center">
-                                        <i class="fa fa-pencil fa-4x my-2"></i>
+                                        
                                     </div>
                                     Themes
                                 </div>
                             </div>
                         </a>
+					
                         <a href="#" class="w-50 pl-3 pb-4">
                             <div class="card border-0 border-bottom-blue shadow-lg shadow-hover">
                                 <div class="card-body text-center">
@@ -194,6 +196,8 @@ body{margin-top:20px;}
                                 </div>
                             </div>
                         </a>
+						
+						--------->
                     </div>
                     <div class="shape"></div>
                 </div>

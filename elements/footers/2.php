@@ -100,7 +100,7 @@
                     <h3><?php echo $content_location[0]["name"]; ?></h3>
                     <p><?php echo $content_location[0]["about_us"]; ?></p>
                 </div>
-                <div class="col item social"><a href="<?php echo $content_location[0]["facebook"]; ?>"><i class="fa fa-facebook"></i></a><a href="<?php echo $content_location[0]["twitter"]; ?>"><i class="fa fa-twitter"></i></a><a href="<?php echo $content_location[0]["instagram"]; ?>"><i class="fa fa-instagram"></i></a></div>
+                <div class="col item social"><a href="<?php echo $content_location[0]["facebook"]; ?>"><i class="fab fa-facebook"></i></a><a href="<?php echo $content_location[0]["twitter"]; ?>"><i class="fab fa-twitter"></i></a><a href="<?php echo $content_location[0]["instagram"]; ?>"><i class="fab fa-instagram"></i></a></div>
             </div>
             <p class="copyright"><?php echo $content_location[0]["name"]; ?> © <?php echo date("Y"); ?></p>
         </div>

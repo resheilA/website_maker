@@ -4,7 +4,7 @@ body{margin-top:20px;}
 .masthead {
     padding: 3rem 0 7rem;
     position: relative;
-    background-color: #dd3d31;
+    background-color: inherit;
     background-image: url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, #dd3d31 0%, #d22f23 100%);
     background-size: cover;
     z-index: 0
@@ -60,9 +60,7 @@ body{margin-top:20px;}
 }
 
 .masthead .masthead-cards .shape {
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    position: absolute;   
     background-color: rgba(255, 255, 255, .3);
     top: 0;
     left: 0;

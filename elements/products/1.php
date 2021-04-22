@@ -56,8 +56,7 @@
 												<div class="label-rating">'.$product["color"].'</div>
 											</div> <!-- rating-wrap.// -->
 									</figcaption>
-									<div class="bottom-wrap">
-										<center><a href="products.php"><button class="btn btn-primary mt-5">View More Products</button></a></center>
+									<div class="bottom-wrap">										
 									</div> <!-- bottom-wrap.// -->
 								</figure>
 							</div> <!-- col // -->					
@@ -66,7 +65,7 @@
 				?>
 		
 </div> <!-- row.// -->
-
+<center><a href="products.php"><button class="btn btn-primary mt-5">View More Products</button></a></center>
 
 
 </div> 

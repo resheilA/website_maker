@@ -39,7 +39,7 @@ body{
 		box-shadow:none;
 	}
 </style>	
-<div class="container contact">
+<div class="contact">
 	<div class="row">
 		<div class="col-md-3" id="contactc">
 			<div class="contact-info">

@@ -63,7 +63,7 @@ h4{
 			?>	
                 
             </div>
-			<center><button class="btn btn-primary mt-5">View More Products</button></center><br>
+			<center><a href="products.php"><button class="btn btn-primary mt-5">View More Products</button></a></center>
         </div>
     </div>
 </div>

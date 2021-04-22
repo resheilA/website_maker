@@ -66,5 +66,5 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 	  
           </div>
 		  <br>
-		  <center><button class="btn btn-primary">View More Products</button></center>
+		  <center><a href="products.php"><button class="btn btn-primary mt-5">View More Products</button></a></center>
     </div>

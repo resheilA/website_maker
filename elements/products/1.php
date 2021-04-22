@@ -57,7 +57,7 @@
 											</div> <!-- rating-wrap.// -->
 									</figcaption>
 									<div class="bottom-wrap">
-										
+										<center><a href="products.php"><button class="btn btn-primary mt-5">View More Products</button></a></center>
 									</div> <!-- bottom-wrap.// -->
 								</figure>
 							</div> <!-- col // -->					

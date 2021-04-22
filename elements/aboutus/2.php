@@ -148,60 +148,7 @@ body{margin-top:20px;}
             <div class="col-lg-7 py-5">
                 <h1 class="mb-4">About Us!</h1>
                 <h2 class="m-0"><p><?php echo $content_business[0]["about_us"]; ?></p></h2>
-            </div>
-            <div class="col-lg-5">
-                <div class="py-5 px-4 masthead-cards">
-                    <div class="d-flex">
-                    <!-----------	
-						<a href="#" class="w-50 pr-3 pb-4">
-                            <div class="card border-0 border-bottom-red shadow-lg shadow-hover">
-                                <div class="card-body text-center">
-                                    <div class="text-center">
-                                        
-                                    </div>
-                                    Themes
-                                </div>
-                            </div>
-                        </a>
-					
-                        <a href="#" class="w-50 pl-3 pb-4">
-                            <div class="card border-0 border-bottom-blue shadow-lg shadow-hover">
-                                <div class="card-body text-center">
-                                    <div class="text-center">
-                                        <i class="fa fa-th fa-4x my-2"></i>
-                                    </div>
-                                    Templates
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="d-flex">
-                        <a href="#" class="w-50 pr-3">
-                            <div class="card border-0 border-bottom-yellow shadow-lg shadow-hover">
-                                <div class="card-body text-center">
-                                    <div class="text-center">
-                                        <i class="fa fa-4x fa-code my-2"></i>
-                                    </div>
-                                    Snippets
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="w-50 pl-3">
-                            <div class="card border-0 border-bottom-green shadow-lg shadow-hover">
-                                <div class="card-body text-center">
-                                    <div class="text-center">
-                                        <i class="fa fa-4x fa-list my-2"></i>
-                                    </div>
-                                    Guides
-                                </div>
-                            </div>
-                        </a>
-						
-						--------->
-                    </div>
-                    <div class="shape"></div>
-                </div>
-            </div>
+            </div>                        
         </div>
     </div>
     <svg style="pointer-events: none" class="wave" width="100%" height="50px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
